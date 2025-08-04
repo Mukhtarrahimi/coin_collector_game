@@ -20,3 +20,12 @@ player_height = 50
 player_x = screen_width // 2 - player_width // 2
 player_y = screen_height - player_height - 10
 player_speed = 5
+
+# intailze obtacle
+obstacle_widht = 100
+obstacle_height = 20
+obstacle_width_x = random.randint(0, screen_width - obstacle_widht)
+obstacle_height_y = -obstacle_height
+obstacle_speed = 3
+obstacle_speed_incrase = 0.2
+
