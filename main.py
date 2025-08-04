@@ -29,3 +29,10 @@ obstacle_height_y = -obstacle_height
 obstacle_speed = 3
 obstacle_speed_incrase = 0.2
 
+# intailize coin
+
+coin_radius = 15
+coin_x = random.randint(coin_radius, screen_width - coin_radius)
+coin_y = -coin_radius
+coin_speed = 4
+coin_speed_incrase = 0.2
