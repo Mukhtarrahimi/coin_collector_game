@@ -110,7 +110,7 @@ while running:
         score_text = normal_font.render(f"Score: {score}", True, TEXT_COLOR)
         screen.blit(score_text, (screen_width // 2 - score_text.get_width() // 2,
                                  screen_height // 2 + game_over_text.get_height() // 2))
-    else:
+    else: 
         pygame.draw.rect(screen, PLAYER_COLOR, player_rect)
         pygame.draw.rect(screen, OBSTACLE_COLOR, obstacle_rect)
         pygame.draw.circle(screen, COIN_COLOR, (coin_x, coin_y), coin_radius)
