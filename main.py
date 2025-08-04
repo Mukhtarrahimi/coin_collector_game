@@ -51,6 +51,24 @@ game_over = False
 # game loop
 while running:
   
+    for event in pygame.event.get():
+        print(event)
+        if event.type == pygame.QUIT:
+            running = False
+        if event.type == pygame.KEYDOWN and game_over:
+            if event.type == pygame.K_RETURN:
+                game_over = False
+                player_x = screen_width // 2 - player_width // 2
+                player_y = screen_height - player_height - 10
+                obstacle_width_x = random.randint(0, screen_width - obstacle_widht)
+                obstacle_height_y = -obstacle_height
+                obstacle_speed = 3
+                coin_x = random.randint(coin_radius, screen_width - coin_radius)
+                coin_y = -coin_radius
+                coin_speed = 4
+                score = 0
+        
+        
     pygame.display.update()
     clock.tick(60)
 pygame.quit()
