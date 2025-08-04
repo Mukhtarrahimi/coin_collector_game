@@ -48,4 +48,9 @@ dark_mode = True
 running = True
 game_over = False
 
-
+# game loop
+while running:
+  
+    pygame.display.update()
+    clock.tick(60)
+pygame.quit()
