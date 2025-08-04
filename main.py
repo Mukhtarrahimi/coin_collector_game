@@ -36,3 +36,16 @@ coin_x = random.randint(coin_radius, screen_width - coin_radius)
 coin_y = -coin_radius
 coin_speed = 4
 coin_speed_incrase = 0.2
+
+# Initialize game state variables and fonts
+
+clock = pygame.time.Clock()
+score = 0
+normal_font = pygame.font(None, 36)
+game_over_font = pygame.font(None, 72)
+dark_mode = True
+
+running = True
+game_over = False
+
+
